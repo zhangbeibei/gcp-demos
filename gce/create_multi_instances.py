@@ -78,7 +78,7 @@ if __name__ == '__main__':
     credentials = GoogleCredentials.get_application_default()
     compute = googleapiclient.discovery.build('compute', 'v1', credentials=credentials)
 
-    project_id = "becky-poc"
+    project_id = "{your-project-id}"
     zone = "us-central1-f"
     instance_type = "n1-standard-1"
     instance_name = "demo-instances-"
