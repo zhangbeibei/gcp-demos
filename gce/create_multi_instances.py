@@ -85,8 +85,8 @@ if __name__ == '__main__':
     instance_count = 2
 
     print('start creating instances.')
-    # operation = create_multi_instances(compute, project_id, zone, instance_type, instance_name, instance_count)
-    # result = wait_for_operation(compute, project_id, zone, operation['name'])
+    operation = create_multi_instances(compute, project_id, zone, instance_type, instance_name, instance_count)
+    result = wait_for_operation(compute, project_id, zone, operation['name'])
     print('instances created.')
 
     instances = list_instances(compute, project_id, zone, instance_name)
